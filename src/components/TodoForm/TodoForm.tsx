@@ -28,8 +28,6 @@ const TodoForm: React.FC = () => {
     return <form
         onSubmit={(event) => {
             addTodo(event, value)
-            console.log(value);
-            
         } }
     >
         <TextField id="Add todo"
