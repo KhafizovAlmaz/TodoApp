@@ -23,7 +23,7 @@ const TodoList: React.FC = () => {
         changeState({type: ActionType.TOGGLE, payload: todoForChange})
     }
 
-    return <List sx={{ width: '100%', maxWidth: 500, bgcolor: 'background.paper', margin: 'auto' }}>
+    return <List sx={{ width: '100%', maxWidth: 500,  margin: 'auto' }}>
         {state.todos.map((todo,i) => (
             <ListItem key={i} 
             dense button 
