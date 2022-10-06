@@ -3,6 +3,7 @@ import {State, Action, ActionType} from "../types/stateType";
 
 //Создаем state
 export const initialState: State = {
+    newTodo: '',
     todos: []
 };
 

@@ -3,6 +3,7 @@ import {Dispatch} from "react";
 
 //В состоянии хранится массив уже созданных задач
 export type State = {
+    newTodo: string,
     todos: Todos
 }
 
@@ -30,6 +31,6 @@ export type Action = ActionStringPayload | ActionObjectPayload;
 
 //Наш контекст состоит из стейта и функции-редьюсера, в которую будут передаваться Action. Тип Dispatch импортируется из библиотеки react
 export type ContextState = {
-    state: State;
-    changeState: Dispatch<Action>
+    state: State,
+    changeState: Dispatch<Action> 
 }
